@@ -167,7 +167,7 @@
             <Grid Margin="10">
 
                 <Grid.RowDefinitions>
-                    <!--Section header-->
+                    <!--Panel title-->
                     <RowDefinition Height="Auto" />
                     <!--List label-->
                     <RowDefinition Height="Auto" />
@@ -175,15 +175,18 @@
                     <RowDefinition Height="*" />
                 </Grid.RowDefinitions>
                 
-                <TextBlock Grid.Row="1" 
+                <!--Main section title-->
+                <TextBlock Grid.Row="0" 
                            Text="Finished - Completed Items"
                            FontWeight="Bold"
                            Margin="0,0,0,10" />
                 
+                <!--List header label-->
                 <TextBlock Grid.Row="1" 
                            Text="Finished Items (ListBox)"
                            Margin="0,0,0,5" />
 
+                <!--Actual list-->
                 <ListBox Grid.Row="2" 
                          x:Name="lbFinished"
                          Margin="0"
