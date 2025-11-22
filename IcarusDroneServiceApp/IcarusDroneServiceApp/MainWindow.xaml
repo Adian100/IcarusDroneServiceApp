@@ -24,19 +24,22 @@
             <ColumnDefinition Width="3*" />
         </Grid.ColumnDefinitions>
 
-        <!--Intake Panel-->
+        <!--===Intake Panel===-->
         <Border Grid.Row="0" Grid.Column="0" Margin="10" CornerRadius="10">
             <StackPanel Margin="10">
                 <TextBlock Text="Intake - Add New Drone"
                            FontWeight="Bold"
                            Margin="0,0,0,10" />
                 
+                <!--Client Name-->
                 <TextBlock Text="Client Name:" Margin="0,0,0,2" />
                 <TextBox x:Name="txtClientName" Margin="0,0,0,10" />
 
+                <!--Drone Model-->
                 <TextBlock Text="Drone Model:" Margin="0,0,0,2" />
                 <TextBox x:Name="txtDroneModel" Margin="0,0,0,10" />
 
+                <!--Service Problem-->
                 <TextBlock Text="Service Problem (multiline):" Margin="0,0,0,2" />
                 <TextBox x:Name="txtServiceProblem"
                          Margin="0,0,0,10" 
@@ -44,12 +47,15 @@
                          Height="100" 
                          TextWrapping="Wrap" />
 
+                <!--Service Cost-->
                 <TextBlock Text="Service Cost (##.##):" Margin="0,0,0,2" />
                 <TextBox x:Name="txtServiceCost" Margin="0,0,0,10" />
 
+                <!--Service Tag & Priority-->
                 <StackPanel Orientation="Horizontal" Margin="0,0,0,10">
                     <StackPanel Width="150">
                         <TextBlock Text="Service Tag (100-900, +10):" Margin="0,0,0,2" />
+                        <TextBox x:Name="txtServiceTag" />
                     </StackPanel>
 
                     <StackPanel Margin="20,0,0,0">
