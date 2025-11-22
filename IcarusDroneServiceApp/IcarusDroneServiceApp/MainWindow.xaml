@@ -30,7 +30,7 @@
                 <TextBlock Text="Intake - Add New Drone"
                            FontWeight="Bold"
                            Margin="0,0,0,10" />
-                
+
                 <!--Client Name-->
                 <TextBlock Text="Client Name:" Margin="0,0,0,2" />
                 <TextBox x:Name="txtClientName" Margin="0,0,0,10" />
@@ -62,23 +62,24 @@
                         <TextBlock Text="Priority:" Margin="0,0,0,2" />
                         <StackPanel Orientation="Horizontal">
                             <RadioButton x:Name="rbRegular"
-                                     Content="Regular"
-                                     GroupName="PriorityGroup"
-                                     Margin="0,0,10,0"
-                                     IsChecked="True" />
+                                         Content="Regular"
+                                         GroupName="PriorityGroup"
+                                         Margin="0,0,10,0"
+                                         IsChecked="True" />
                             <RadioButton x:Name="rbExpress"
-                                     Content="Express"
-                                     GroupName="PriorityGroup" />
+                                         Content="Express"
+                                         GroupName="PriorityGroup" />
+                        </StackPanel>
+                    </StackPanel>
                 </StackPanel>
-            </StackPanel>
-            </StackPanel>
 
-            <Button x:Name="btnAddNewItem"
-                    Content="Add New Item"
-                    Height="40"
-                    HorizontalAlignment="Stretch" />
+                <!--Add New Item Button-->
+                <Button x:Name="btnAddNewItem"
+                        Content="Add New Item"
+                        Height="48"
+                        HorizontalAlignment="Stretch" />
             </StackPanel>
         </Border>
-
     </Grid>
 </Window>
+    
