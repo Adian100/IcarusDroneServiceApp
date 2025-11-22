@@ -80,6 +80,87 @@
                         HorizontalAlignment="Stretch" />
             </StackPanel>
         </Border>
+        
+        <!--===Queues Panel===-->
+        <Border Grid.Row="0" Grid.Column="1" Margin="10" CornerRadius="10">
+            <Grid Margin="10">
+                <Grid.RowDefinitions>
+                    <!--Header-->
+                    <RowDefinition Height="Auto" />
+                    <!--Regular header label-->
+                    <RowDefinition Height="Auto" />
+                    <!--Regular list-->
+                    <RowDefinition Height="*" />
+                    <!--Regular dequeue button-->
+                    <RowDefinition Height="Auto" />
+                    <!--Express header label-->
+                    <RowDefinition Height="Auto" />
+                    <!--Express list-->
+                    <RowDefinition Height="*" />
+                    <!--Express dequeue button-->
+                    <RowDefinition Height="Auto" />
+                </Grid.RowDefinitions>
+
+                <!--Panel title-->
+                <TextBlock Grid.Row="0"
+                           Text="Queues - Regular &amp; Express"
+                           FontWeight="Bold"
+                           Margin="0,0,0,10" />
+
+                <!--Regular Queue header-->
+                <TextBlock Grid.Row="1"
+                           Text="Regular Queue (ListView)"
+                           Margin="0,0,0,5" />
+
+                <!--Regular Queue ListView-->
+                <ListView Grid.Row="2"
+                           x:Name="lvRegularQueue"
+                           Margin="0,0,0,5">
+                    <ListView.View>
+                        <GridView>
+                            <GridViewColumn Header="Tag" Width="60" />
+                            <GridViewColumn Header="Client" Width="114" />
+                            <GridViewColumn Header="Model" Width="114" />
+                            <GridViewColumn Header="Problem" Width="190" />
+                            <GridViewColumn Header="Cost" Width="75" />
+                        </GridView>
+                    </ListView.View>
+                </ListView>
+
+                <!--Dequeue Regular button-->
+                <Button Grid.Row="3"
+                        x:Name="btnDequeueRegular"
+                        Content="Dequeue Regular → Finished"
+                        Height="35"
+                        Margin="0,0,0,10" />
+                
+                <!--Express Queue header-->
+                <TextBlock Grid.Row="4"
+                           Text="Express Queue (ListView)"
+                           Margin="0,0,0,5" />
+
+                <!--Express Queue ListView-->
+                <ListView Grid.Row="5"
+                          x:Name="lvExpressQueue"
+                          Margin="0,0,0,5">
+                    <ListView.View>
+                        <GridView>
+                            <GridViewColumn Header="Tag" Width="60" />
+                            <GridViewColumn Header="Client" Width="114" />
+                            <GridViewColumn Header="Model" Width="114" />
+                            <GridViewColumn Header="Problem" Width="190" />
+                            <GridViewColumn Header="Cost" Width="75" />
+                        </GridView>
+                    </ListView.View>
+                </ListView>
+
+                <!--Dequeue Express button-->
+                <Button Grid.Row="6"
+                        x:Name="btnDequeueExpress"
+                        Content="Dequeue Express → Finished"
+                        Height="35" />
+            </Grid>
+        </Border>
     </Grid>
 </Window>
     
