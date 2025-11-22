@@ -194,6 +194,17 @@
                          HorizontalAlignment="Stretch" />
             </Grid>
         </Border>
+        
+        <!--===Status Bar===-->
+        <StatusBar Grid.Row="1"
+                   HorizontalAlignment="Stretch">
+            
+            <StatusBarItem HorizontalAlignment="Stretch"
+                           HorizontalContentAlignment="Center">
+                <TextBlock x:Name="txtStatus"
+                           Text="Status: Ready" />
+            </StatusBarItem>
+        </StatusBar>
     </Grid>
 </Window>
     
