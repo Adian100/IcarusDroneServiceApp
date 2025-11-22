@@ -197,6 +197,7 @@
         
         <!--===Status Bar===-->
         <StatusBar Grid.Row="1"
+                   Grid.ColumnSpan="3"
                    HorizontalAlignment="Stretch">
             
             <StatusBarItem HorizontalAlignment="Stretch"
